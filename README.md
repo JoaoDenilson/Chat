@@ -1,7 +1,7 @@
 # chatpdm
 
 Apk-chat, desenvolvido com FrameWork Flutter e Firebase.
-A new Flutter project.
+
 
 ## Getting Started
 
