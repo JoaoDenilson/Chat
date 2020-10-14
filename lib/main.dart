@@ -9,7 +9,7 @@ void main() async {
 
   FirebaseHelper helper = FirebaseHelper();
 
-  helper.sendMessage("Oi.");
+  helper.sendMessage("Oi Ramozim.");
 
   runApp(MyApp());
 }
