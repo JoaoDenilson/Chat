@@ -18,3 +18,23 @@ class ChatMessage extends StatelessWidget {
                     backgroundImage: NetworkImage(data["SenderPhotoUrl"]),
                   ),
                 )
+  : Container(),
+          Expanded(
+            child: Column(
+              crossAxisAlignment:
+                  mine ? CrossAxisAlignment.end : CrossAxisAlignment.start,
+              children: [
+                data["imgUrl"] != null
+                    ? Image.network(data["imgUrl"], width: 250.0)
+                    : Text(data["text"], style: TextStyle(fontSize: 16.0)),
+                Text(
+                  data["SenderName"],
+                  textAlign: mine ? TextAlign.end : TextAlign.start,
+                  style: TextStyle(
+                      fontSize: 13.0,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.blueGrey),
+                )
+              ],
+            ),
+          ),
