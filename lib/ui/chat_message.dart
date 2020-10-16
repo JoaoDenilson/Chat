@@ -38,3 +38,16 @@ class ChatMessage extends StatelessWidget {
               ],
             ),
           ),
+ !mine
+              ? Padding(
+                  padding: EdgeInsets.only(left: 16.0),
+                  child: CircleAvatar(
+                    backgroundImage: NetworkImage(data["SenderPhotoUrl"]),
+                  ),
+                )
+              : Container(),
+        ],
+      ),
+    );
+  }
+}
