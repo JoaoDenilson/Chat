@@ -1,4 +1,5 @@
 import 'package:chatpdm/helpers/firebase_helper.dart';
+import 'package:chatpdm/ui/chat_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -21,11 +22,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Chat app',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: Container(),
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+          iconTheme: IconThemeData(color: Colors.blue)),
+      home: ChatPage(),
     );
   }
 }
-
